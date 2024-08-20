@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -17,4 +18,8 @@ import Card from '../components/Card.astro';
 
 		<Card title='Title' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in purus finibus, iaculis sem a, aliquam nisl. Vivamus non turpis nisl. Phasellus nec fringilla ante.' image='https://placehold.co/600x400' tags={['Tag 1', 'Tag 2']}></Card>
 	</main>
+	<script>
+		const selected = document.getElementById("nav-home");
+		selected?.classList.replace("dark:text-white", "dark:text-blue-500");
+	</script>
 </Layout>
